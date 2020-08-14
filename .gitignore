@@ -3,3 +3,6 @@ Logs/
 obj/
 *.csproj
 *.sln
+Temp/
+Assets/GleyPlugins/
+Assets/GleyPlugins.meta

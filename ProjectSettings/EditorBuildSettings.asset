@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/GleyPlugins/Ads/Example/TestAdsScene.unity
+    guid: ea020cf16c969a440bd382140d1c36c7
   m_configObjects: {}
