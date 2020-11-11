@@ -1,4 +1,4 @@
-# Mobile Ads - Unity 2020.1 - Admob
+# Mobile Ads - Unity 2019 LTS - Admob
 This repository was used for making this Admob integration tutorial on Youtube:  
 https://youtu.be/03gOWprmcHE  
   
