@@ -46,6 +46,7 @@
     <setting name="bundleId" value="com.gley.chickenjump" />
     <setting name="explodeAars" value="True" />
     <setting name="gradleBuildEnabled" value="True" />
+    <setting name="gradlePropertiesTemplateEnabled" value="False" />
     <setting name="gradleTemplateEnabled" value="False" />
     <setting name="installAndroidPackages" value="True" />
     <setting name="localMavenRepoDir" value="Assets/GeneratedLocalRepo" />
