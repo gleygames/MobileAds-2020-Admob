@@ -1,16 +1,27 @@
 Google Mobile Ads Unity Plugin Change Log
 
 **************
-Version 6.0.0 (in progress)
+Next version
 **************
 
 Plugin:
-- Added support for GMA iOS SDK v8 and GMA Android SDK v20. Requires using GMA
-  iOS SDK v8.0.0 or higher, and GMA Android SDK 20.0.0 or higher.
+- Fixed https://github.com/googleads/googleads-mobile-unity/issues/1613 where build error occurs on Unity 2021.
+- Fixed https://github.com/googleads/googleads-mobile-unity/issues/1616 where iOS build contains undefined symbol.
+- Automatically added SKAdNetworkIdentifiers recommended by https://developers.google.com/admob/ios/ios14#skadnetwork into generated iOS builds. You can manage the list of SKAdNetworkIdentifier values by editing `Assets/GoogleMobileAds/Editor/GoogleMobileAdsSKAdNetworkItems.xml`.
+
+Built and tested with:
+- Google Play services 20.0.0
+- Google Mobile Ads iOS SDK 8.2.0
+- External Dependency Manager for Unity 1.2.165.
+
+**************
+Version 6.0.0
+**************
+
+Plugin:
+- Added support for GMA iOS SDK v8 and GMA Android SDK v20. Requires using GMA iOS SDK v8.0.0 or higher, and GMA Android SDK 20.0.0 or higher.
 - Removed MobileAds.Initialize(string appId).
-- Removed Birthday, Gender, TestDevices, TagForChildDirectedTreatment properties
-  on AdRequest. TagForChildDirectedTreatment and TestDeviceIds properties are
-  available under RequestConfiguration..
+- Removed Birthday, Gender, TestDevices, TagForChildDirectedTreatment properties on AdRequest. TagForChildDirectedTreatment and TestDeviceIds properties are available under RequestConfiguration..
 - Removed OnAdLeavingApplication event for all formats.
 - Removed MediationAdapterClassName from all formats in favor of ResponseInfo.
 - Removed Message from AdErrorEventArgs class in favor of AdError.
@@ -18,6 +29,7 @@ Plugin:
 - Added support for ad load errors, please see https://developers.google.com/admob/unity/ad-load-errors for details.
 - Ad Manager integration now requires providing the app ID in the Unity Editor.
 - Changed package format to contain compiled assemblies in DLL format in place of the uncompiled code.
+- Prior to GMA iOS SDK v8.7.0 release, you need to disable "Add use_frameworks!" and "Always add the main target to Podfile" in Unity Editor -> Assets -> External Dependency Manager -> iOS Resolver -> Settings, or else the GMA plugin does not work.
 
 Built and tested with:
 - Google Play services 20.0.0

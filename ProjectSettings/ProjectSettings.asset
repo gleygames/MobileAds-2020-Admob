@@ -248,7 +248,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/gleym/Desktop/ProiecteGley/Plugins/EasyIAP/EasyIAP2018/Key/GleyTestApp.keystore
+  AndroidKeystoreName: D:/ProiecteGley/Plugins/EasyIAP/EasyIAP-Release/Key/GleyTestApp.keystore
   AndroidKeyaliasName: gleytestapp
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -637,8 +637,8 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
-    4: USE_ADMOB;USE_ADMOB_PATCH
-    7: USE_ADMOB;USE_ADMOB_PATCH
+    4: _PATCH;USE_ADMOB;USE_ADMOB_PATCH
+    7: _PATCH;USE_ADMOB;USE_ADMOB_PATCH
     14: 
   platformArchitecture: {}
   scriptingBackend:
